@@ -1,2 +1,4 @@
 # UTF8Str
-all the String methods plus byteLength, bytes array and more.
+
+a regular JavaScript String extended with the following properties
+

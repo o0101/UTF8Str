@@ -8,17 +8,16 @@
       const syms = symbols(s);
       const slen = syms.length;
 
-      Object.assign( this, {
-        bytes: b,
-        byteLength: blen,
-        symbols: syms,
-        symLength: slen
-      });
+      Object.defineProperty( this, 'bytes', { value: Uint8Array.from(b), enumerable: true});
+      Object.defineProperty( this, 'byteLength', { value: blen, enumerable:true });
+      Object.defineProperty( this, 'chars', { value: Array.from(syms), enumerable: true});
+      Object.defineProperty( this, 'charLength', { value: slen, enumerable: true});
     }
   }
 
-  try{ module.exports = UTF8Str; }catch(e) { Object.assign( self, { UTF8Str } ); }
+  try{ module.exports = UTF8Str; } catch(e) { Object.assign( self, { UTF8Str } ); }
 
+  //test_basics();
 
   function symbols(str) {
     return Array.from(str);
