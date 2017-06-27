@@ -66,8 +66,8 @@ Open an issue or submit a pull request. Where to start?
 
 PR ideas:
 
-- implement `.fromBytes`
-- implement `.fromUTF8Binary`
+- implement `.fromBytes` :heavy_check_mark: (done in 1.0.2)
+- implement `.fromUTF8Binary` :heavy_check_mark: (done 1.0.2)
 - implement the String methods, using a Proxy that wraps the constructed instance (see, for examples, [Uint1Array](https://github.com/dosaygo-coder-0/Uint1Array), to intercept calls to String bracket-accessor, and respect Unicode character boundaries, instead of not doing so. 
 
 ## But isn't JavaScript's String "good enough"?
