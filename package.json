@@ -1,0 +1,25 @@
+{
+  "name": "utf8str",
+  "version": "1.0.0",
+  "description": "JavaScript Strings in a Unicode World",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dosaygo-coder-0/UTF8Str.git"
+  },
+  "keywords": [
+    "utf8",
+    "utf-8",
+    "String",
+    "unicode"
+  ],
+  "author": "Kris <writetocris@outlook.com> (https://2yago.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dosaygo-coder-0/UTF8Str/issues"
+  },
+  "homepage": "https://github.com/dosaygo-coder-0/UTF8Str#readme"
+}
