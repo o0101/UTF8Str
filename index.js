@@ -17,7 +17,7 @@
 
   try{ module.exports = UTF8Str; } catch(e) { Object.assign( self, { UTF8Str } ); }
 
-  //test_basics();
+  test_basics();
 
   function symbols(str) {
     return Array.from(str);

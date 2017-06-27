@@ -1,6 +1,6 @@
 {
   "name": "utf8str",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript Strings in a Unicode World",
   "main": "index.js",
   "scripts": {
