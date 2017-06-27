@@ -9,7 +9,7 @@ JavaScript Strings have different lengths depending on whether you are counting 
 UTF8Str provides two extra length properties:
 
 ```js
-x = UTF8Str("Foo © bar 𝌆 baz ☃ qux");;
+x = UTF8Str("Foo © bar 𝌆 baz ☃ qux");
 x.length // 22 
 x.byteLength // 27 (correct!)
 x.charLength // 21 (correct!)
@@ -26,7 +26,7 @@ Which all can return different results depending on what the String contains. Th
 UTF8Str provides the following two simpler slots for accessing the String's contents:
 
 ```js
-x.chars // [ 'F','o','o',' ','©',' ','b','a','r',' ','𝌆'' ','b','a','z',' ','☃',' ','q','u','xx' ]
+x.chars // [ 'F','o','o',' ','©',' ','b','a','r',' ','𝌆'' ','b','a','z',' ','☃',' ','q','u','x' ]
 x.bytes // Uint8Array [ 70, 111, 111, 32, 194, 169, 32, 98, 97, 114, 32, 240, 157, 140, 134, 32, 98, 97, 122, 32, 226, 152, 131, 32, 113, 117, 120 ]
 ```
 
