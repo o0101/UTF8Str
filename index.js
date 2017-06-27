@@ -13,14 +13,27 @@
       Object.defineProperty( this, 'chars', { value: Array.from(syms), enumerable: true});
       Object.defineProperty( this, 'charLength', { value: slen, enumerable: true});
     }
+    static fromBytes(b) {
+      return frombytes(b);
+    }
+    static fromUTF8Binary(bs) {
+      return frombinary(bs);
+    }
   }
 
   try{ module.exports = UTF8Str; } catch(e) { Object.assign( self, { UTF8Str } ); }
 
-  test_basics();
+  //test_basics();
 
   function symbols(str) {
     return Array.from(str);
+  }
+
+  function frombinary(bs) {
+    return new UTF8Str( decodeURIComponent(escape(bs) ) );
+  }
+  function frombytes(b) {
+    return frombinary( Array.from(b).map( v => String.fromCharCode(v) ).join(''));
   }
 
   function symbytes( sym ) {
@@ -40,6 +53,8 @@
     console.log(t);
     console.log( new UTF8Str(t));
     console.log(Array.from(bytes(t)).map( b => b.toString(16) ));
+    const x = new UTF8Str(t);
+    console.log("fbytes", UTF8Str.fromBytes(x.bytes));
   }
 
   function test_basics() {
