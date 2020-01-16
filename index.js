@@ -1,6 +1,4 @@
-"use strict";
-{
-  class UTF8Str extends String {
+  export default class UTF8Str extends String {
     constructor( s = '' ) {
       super(s);
       const b = bytes(s); 
@@ -20,10 +18,6 @@
       return frombinary(bs);
     }
   }
-
-  try{ module.exports = UTF8Str; } catch(e) { Object.assign( self, { UTF8Str } ); }
-
-  //test_basics();
 
   function symbols(str) {
     return Array.from(str);
@@ -61,4 +55,3 @@
     test("😂😌");
     test("Foo © bar 𝌆 baz ☃ qux");;
   }
-}
