@@ -1,6 +1,8 @@
 # UTF8Str
 
-Unicode-aware JavaScript String class.
+Unicode-aware JavaScript String class. Bring back the old days when a char was a char!
+
+All the String methods plus byteLength, bytes array and more.
 
 ## Why?
 
