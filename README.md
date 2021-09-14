@@ -1,8 +1,12 @@
-# UTF8Str
+# UTF8Str ![npm](https://img.shields.io/npm/dt/utf8str)
 
 Unicode-aware JavaScript String class. Bring back the old days when a char was a char!
 
 All the String methods plus byteLength, bytes array and more.
+
+```shell
+$ npm i --save utf8str
+```
 
 ## Why?
 
